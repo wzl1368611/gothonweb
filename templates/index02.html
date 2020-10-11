@@ -1,0 +1,23 @@
+{% extends 'layout.html'%}
+{% block content%}
+{% if name%}
+<p>当前用户:{{name}}</p>
+{% else %}
+<p>当前未登录:</p>
+<a href="http://localhost:5000/login">登录</a>
+{% endif %}
+<p>请选择以下的关卡</p>
+{% for i in li%}
+<p > {{ i}}</p>
+{% endfor%}
+{% for i in li%}
+<form action="/change" method="POST">
+    
+    <br>
+    地图：<input type="text" name="action" > {{i}}
+       
+    <input type="submit" value="确定">
+    <input type="reset" value="取消">
+</form>
+{% endfor %}
+{% endblock%}

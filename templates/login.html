@@ -1,0 +1,12 @@
+{% extends 'layout.html'%}
+{% block content %}
+    <form action="index02" method="POST">
+        <p>username <input type="text" name="name" size="10"></p>
+        <p>password  <input type="password" name="password" size="10">  </p>
+        <p>
+            <input type="submit" value="确定">
+            <input type="reset" value="取消">
+
+        </p>
+    </form>
+{% endblock %}

@@ -1,0 +1,20 @@
+{% extends 'layout.html'%}
+{% block content%}
+<!--    这是一个注释-->
+
+<table border="1">
+    <tr>
+        <th>action</th>
+        <th>>>room</th>
+    </tr>
+    {% for k,v in li.items()  %}
+    <tr>
+        <td>{{  k }}</td>
+        <td>>>{{  v }}</td>
+    </tr>
+    {% endfor%}
+</table>
+
+
+<!--    写每个房间的action代码-->
+{% endblock%}
